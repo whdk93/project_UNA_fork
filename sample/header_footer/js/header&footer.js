@@ -118,4 +118,10 @@ $(function() {
             color : "#fff"
         })
     })
+    // go_up_
+    $(".go_up_img").click(function(){
+        $('html, body').animate({
+            scrollTop : 0
+        }, 400);
+    })
 });

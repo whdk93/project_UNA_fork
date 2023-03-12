@@ -24,22 +24,28 @@
     position: relative;
     width: 40px;
     background-color: #f00;
-    height: 50%;
+    height: 100px;
     writing-mode: vertical-rl;
     text-orientation: upright;
     cursor: pointer;
     float: right;
     box-sizing: border-box;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-left: none;
     top: -200px;
     margin: 0 auto;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
 }
 #bookmark_sub_title>a{
     position: relative;
     display: inline-block;
     color: #fff;
+    width: 20px;
+    left: -13px;
+    margin: 0 auto;
     text-align: center;
+
 }
 #bookmark_ul{
     height: 100%;
@@ -62,11 +68,11 @@
     background-color: orange;
 }
 .bookmark_li:nth-child(3){
-    border-right: 2px solid black;
+    /* border-right: 2px solid black; */
 }
 .bookmark_li:last-child{
     border-bottom: none;
-    border-right: 2px solid black;
+    /* border-right: 2px solid black; */
 }
 .bookmark_li>a{
     display: inline-block;
@@ -78,6 +84,22 @@
 .bookmark_li:first-child>a{
     color: #fff;
 }
+
+/* go_up_button */
+#go_up_div{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 75%;
+    right: 3%;
+    z-index: 1000000;
+}
+.go_up_img{
+    width: 50px;
+    height: 50px;
+}
+
+
 /* header 영역 */
 
 header{
@@ -254,7 +276,7 @@ nav .subMenu .smenu a{
 #header_search .srch_btn{
     position: absolute;
     top: 0;
-    right: 18px;
+    right: 56px;
     width: 50px;
     height: 50px;
     border-radius: 0 20px 20px 0;
@@ -292,11 +314,6 @@ nav .subMenu .smenu a{
     margin: 0 auto;
     margin-bottom: 50px;
 }
-#container::after{
-    content: "";
-    display: block;
-    clear: both;
-}
 #sub_page_h2{
     position: relative;
     width: 100%;
@@ -304,100 +321,39 @@ nav .subMenu .smenu a{
     margin-bottom: 50px;
     text-align: left;
 }
+#container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 .content_1{
     position: relative;
-    border: 1px solid black;
-    width: 35%;
-    height: 200px;
-    float: left;
+    width: 85%;
+    height: 700px;
+    border-top: 2px solid; 
+    border-bottom: 2px solid;
+    margin-bottom: 50px;
+    margin: 0 auto;
 }
-.content_2{
-    position: relative;
-    border: 1px solid red;
-    width: 55%;
-    height: 200px;
-    float: right;
+.con_inside{
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+    background-color: #ccc;
+    text-align: center;
 }
-.content_3{
-    position: relative;
-    border: 1px solid black;
-    width: 60%;
-    height: 200px;
-    float: left;
+.common_p{
+    font-size: 40px;
+    line-height: 70px;
 }
-.content_4{
-    position: relative;
-    border: 1px solid red;
-    width: 35%;
-    height: 660px;
-    float: right;
-}
-.content_5{
-    position: relative;
-    border: 1px solid black;
-    width: 45%;
-    height: 200px;
-    float: left;
-}
-.content_6{
-    position: relative;
-    border: 1px solid red;
-    width: 55%;
-    height: 200px;
-    float: left;
-}
-.content_7{
-    position: relative;
-    border: 1px solid black;
-    width: 30%;
-    height: 200px;
-    float: left;
-}
-.content_8{
-    position: relative;
-    border: 1px solid red;
-    width: 55%;
-    height: 200px;
-    float: right;
-}
-.content_9{
-    position: relative;
-    border: 1px solid black;
-    width: 60%;
-    height: 200px;
-    float: left;
-}
-.content_10{
-    position: relative;
-    border: 1px solid red;
-    width: 35%;
-    height: 600px;
-    float: right;
-}
-.content_11{
-    position: relative;
-    border: 1px solid black;
-    width: 45%;
-    height: 200px;
-    float: left;
-}
-.content_12{
-    position: relative;
-    border: 1px solid red;
-    width: 55%;
-    height: 200px;
-    float: left;
-}
-.sample_content{
-    margin-bottom: 30px;
-}
-
 /* footer 영역 */
 footer{
     position: relative;
     width: 100%;
     min-width: 1100px;
     height: 150px;
+    margin-top: 150px;
     /* background: rgba(0, 0, 0, 1); */
 }
 footer::after{
