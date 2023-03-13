@@ -3,7 +3,7 @@
 /* bookmark_menu */
 #bookmark_div_wrap{
     position: fixed;
-    top: 230px;
+    top: 275px;
     width: 220px;
     height: 200px;
     min-height: 200px;
@@ -24,18 +24,19 @@
     position: relative;
     width: 40px;
     background-color: #f00;
-    height: 100px;
+    height: 101px;
     writing-mode: vertical-rl;
     text-orientation: upright;
     cursor: pointer;
     float: right;
     box-sizing: border-box;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     border-left: none;
     top: -200px;
     margin: 0 auto;
     text-align: center;
     border-radius: 0 10px 10px 0;
+    left: -2px;
 }
 #bookmark_sub_title>a{
     position: relative;
@@ -68,11 +69,11 @@
     background-color: orange;
 }
 .bookmark_li:nth-child(3){
-    /* border-right: 2px solid black; */
+    border-right: 2px solid black;
 }
 .bookmark_li:last-child{
     border-bottom: none;
-    /* border-right: 2px solid black; */
+    border-right: 2px solid black;
 }
 .bookmark_li>a{
     display: inline-block;
@@ -316,10 +317,15 @@ nav .subMenu .smenu a{
 }
 #sub_page_h2{
     position: relative;
-    width: 100%;
-    font-size: 70px;
+    width: 85%;
+    font-size: 50px;
+    margin-top: 25px;
     margin-bottom: 50px;
     text-align: left;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    font-weight: bold;
 }
 #container::after{
     content: "";
@@ -344,7 +350,7 @@ nav .subMenu .smenu a{
     text-align: center;
 }
 .common_p{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 70px;
 }
 /* footer 영역 */
