@@ -5,6 +5,18 @@
 */
 
 /* 폰트 */
+@font-face {
+    font-family: 'sqneo';
+    src: url('../font/NanumSquareNeo-bRg.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sqneoEB';
+    src: url('../font/NanumSquareNeo-dEb.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sqneoHV';
+    src: url('../font/NanumSquareNeo-eHv.ttf') format('truetype');
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,6 +38,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
+	font-family: 'sqneo';
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
