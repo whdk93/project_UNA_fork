@@ -98,7 +98,7 @@ $(function() {
             });
         }else {
             $('#bookmark_div_wrap').animate({
-                left: '-180px'
+                left: '-233px'
             });
         }
     });

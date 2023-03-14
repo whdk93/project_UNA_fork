@@ -9,75 +9,6 @@
     background-attachment: fixed;
 }
 
-/* * * * [S] #container * * * */
-#container{
-    position: relative;
-    /* border: 1px solid navy; */
-}
-/* #link_area */
-#space_area{
-    position: relative;
-    width: 100%;
-    height: 2800px;
-    background-image: url(../images/background2.jpg);
-    background-size: 100%;
-    background-position: center top;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    /* border: 10px solid red; */
-}
-#space_area .skip{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    margin: 30px;
-    cursor: pointer;
-    z-index: 20;
-}
-.skip.up{
-    bottom: 20px;
-    right: 300px;
-}
-.skip.up img{
-    width: 100px;
-}
-#space_area .cele{
-    /* display: none; */
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-#space_area .cele ul{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* border: 1px solid salmon; */
-}
-#space_area .cele li{
-    position: absolute;
-    /* border: 1px solid yellow; */
-}
-#space_area .cele li:nth-child(1){
-    left: 10%;
-    top: 40%;
-}
-#space_area .cele li:nth-child(2){
-    left: 30%;
-    top: 10%;
-}
-#space_area .cele li:nth-child(3){
-    right: 30%;
-    top: 10%;
-}
-#space_area .cele li:nth-child(4){
-    right: 10%;
-    top: 40%;
-}
-#space_area .cele img{
-    position: relative;
-    width: 300px;
-    height: 300px;
-}
 
 /* #earth_area */
 
@@ -98,23 +29,59 @@
     transform-origin: center top;
 } */
 
-/* ver.2*/
-#earth_area_v2{
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    bottom: -150px;
-    left: 0px;
-    overflow: hidden;
-    z-index: 5;
-    pointer-events: none;
-}
-#earth_area_v2 img{
+/* * * * [E] #container * * * */
+
+/* content sample */
+
+#container{
     position: relative;
+    width: 90%;
+    min-width: 1100px;
+    top: 50px;
+    height: auto;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#sub_page_h2{
+    position: relative;
+    width: 85%;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    font-family: 'sqneoHV';
+}
+#container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.content_1{
+    position: relative;
+    width: 85%;
+    height: 700px;
+    border-top: 2px solid; 
+    border-bottom: 2px solid;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+.con_inside{
+    height: 10%;
     width: 100%;
-    height: 100%;
-    left: -400px;
-    bottom: -250px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+    background-color: #ccc;
+    text-align: left;
+    padding-left: 20px;
+}
+.common_p{
+    font-size: 30px;
+    line-height: 70px;
 }
 
-/* * * * [E] #container * * * */
+
+
