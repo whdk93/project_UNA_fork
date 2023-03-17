@@ -18,12 +18,14 @@
     <div id="wrap">
         <!---------- [S] header ---------->
         <header>
+            <!------- header .home //로고영역// ------->
             <h1 class="home">
                 <span>LOGO</span>
                 <div class="logo">
                     <img src="images/header/logoSample2.png" alt="logo">
                 </div>
             </h1>
+            <!------- header nav //탑메뉴영역// ------->
             <nav>
                 <ul class="tMenu">
                     <li class="menu">
@@ -52,6 +54,7 @@
                     </li>
                 </ul>
             </nav>
+            <!------- header .login_area //로그인, 회원가입 버튼영역// ------->
             <div id="login_area">
                 <ul>
                     <li class="srch_btn"><a href="#"><img class="srch_img" src="images/search.png" alt="search"></a></li>
@@ -59,6 +62,7 @@
                     <li><a href="#">회원가입</a></li>
                 </ul>
             </div>
+            <!------- header .header_search //검색영역// ------->
             <div id="header_search">
                 <form action="#" method="post" name="search">
                     <fieldset>
@@ -74,25 +78,32 @@
         <!---------- [S] #container ---------->
         <div id="container">
             <div id="space_area">
-                <!-- <div class="skip down">
-                    효과 넘기기
-                </div> -->
-                <!-- [S] .cele //처음에는 보이지 않다가 일정 영역이 오면 보임 -->
                 <div class="cele">
-                    <ul>
-                        <li class="celestial celestial1"><img src="images/sun.png" alt="sun" title="태양계로 이동"></li>
-                        <li class="celestial celestial2"><img src="images/ngc7293.png" alt="ngc7293" title="성운,성단으로 이동"></li>
-                        <li class="celestial celestial3"><img src="images/galaxy.png" alt="galaxy" title="은하로 이동"></li>
-                        <li class="celestial celestial4"><img src="images/m1.png" alt="m1" title="아직 안이동"></li>
+                    <ul class="cele_ul">
+                        <li class="celestial celestial1">
+                            <img src="images/sun.png" alt="sun" title="태양계로 이동">
+                            <p class="title">태양계로 가보기</p>
+                        </li>
+                        <li class="celestial celestial2">
+                            <img src="images/ngc7293.png" alt="ngc7293" title="성운,성단으로 이동">
+                            <p class="title">성운, 성단으로 가보기</p>
+                        </li>
+                        <li class="celestial celestial3">
+                            <img src="images/galaxy_20.png" alt="galaxy" title="은하로 이동">
+                            <p class="title">은하로 가보기</p>
+                        </li>
+                        <li class="celestial celestial4">
+                            <img src="images/m1.png" alt="m1" title="아직 안이동">
+                            <p class="title">우주어디론가 가보기</p>
+                        </li>
                     </ul>
                 </div>    
-                <!-- [E] .cele -->
-                <div class="skip up">
-                    <img src="images/rocket.png" alt="rocket" title="맨 위로">
-                </div>
             </div>
             <div id="earth_area_v2">
-                <img id="earth_v2" src="images/earth_sample2.png" alt="earth">
+                <img id="earth_v2" src="images/earth_sample2.gif" alt="earth">
+            </div>
+            <div id="go_up_div">
+                <img src="images/go_up.png" alt="위로이동" class="go_up_img">
             </div>
         </div>
         <!---------- [E] container ---------->
