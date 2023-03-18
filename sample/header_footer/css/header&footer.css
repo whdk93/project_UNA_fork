@@ -4,13 +4,13 @@
 /* bookmark_menu */
 #bookmark_div_wrap{
     position: fixed;
-    top: 275px;
-    width: 275px;
-    height: 225px;
+    top: 450px;
+    width: 190px;
+    height: 250px;
     min-height: 200px;
     z-index: 1000;
     text-align: center;
-    left: -233px;
+    /* left: -233px; */
     box-sizing: border-box;
     overflow: hidden;
     /* border-top: 2px solid #000;
@@ -21,7 +21,7 @@
     display: block;
     clear: both;
 }
-#bookmark_sub_title{
+/* #bookmark_sub_title{
     position: relative;
     width: 40px;
     background-color: #f00;
@@ -48,10 +48,10 @@
     margin: 0 auto;
     text-align: center;
     font-family: 'sqneoEB';
-}
+} */
 #bookmark_ul{
     height: 100%;
-    width: 233px;
+    width: 100%;
     box-sizing: border-box;
     border: 2px solid rgb(32,32,55);
     border-left: none;
@@ -59,23 +59,30 @@
 }
 .bookmark_li{
     position: relative;
-    height: 25%;
+    height: 20%;
     width: 100%;
     background-color: #f0f0f0;
-    font-size: 20px;
+    font-size: 18px;
     box-sizing: border-box;
     border-bottom: 1px solid #999;
 
 }
 .bookmark_li:first-child{
+    background-color: #f00;
+    color: #fff;
+    font-family: 'sqneoEB';
+    font-size: 23px;
+    line-height: 50px;
+}
+.bookmark_li:nth-child(2){
     background-color: orange;
 }
 .bookmark_li:nth-child(3){
-    border-right: 2px solid rgb(32,32,55);
+    /* border-right: 2px solid rgb(32,32,55); */
 }
 .bookmark_li:last-child{
     border-bottom: none;
-    border-right: 2px solid rgb(32,32,55);
+    /* border-right: 2px solid rgb(32,32,55); */
 }
 .bookmark_li>a{
     display: inline-block;
@@ -308,30 +315,37 @@ nav .subMenu .smenu a{
     color: rgb(32,32,55);
 
 }
+/* title and BG img */
+#title_bg_wrap{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/bg_sample.jpeg);
+}
+#sub_page_h2{
+    position: absolute;
+    width: 85%;
+    /* border: 1px solid; */
+    height: 99px;
+    bottom: 0;
+    font-size: 100px;
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'sqneoHV';
+    color: rgba(238, 238, 238, 0.6);
+}
 
 /* content sample */
 
 #container{
     position: relative;
-    width: 90%;
+    width: 75%;
     min-width: 1100px;
     top: 50px;
     height: auto;
     /* border: 1px solid; */
     margin: 0 auto;
     margin-bottom: 50px;
-}
-#sub_page_h2{
-    position: relative;
-    width: 85%;
-    font-size: 50px;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    text-align: left;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    margin: 0 auto;
-    font-family: 'sqneoHV';
 }
 #container::after{
     content: "";
@@ -340,7 +354,7 @@ nav .subMenu .smenu a{
 }
 .content_1{
     position: relative;
-    width: 85%;
+    width: 100%;
     height: 700px;
     border-top: 2px solid; 
     border-bottom: 2px solid;
