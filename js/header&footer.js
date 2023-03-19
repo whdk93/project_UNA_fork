@@ -24,6 +24,13 @@ $(function() {
         }
     });
 
+    /* go_up버튼 클릭 */
+    $('.go_up_img').click(function(){
+        $('html, body').animate({
+            scrollTop : 0
+        }, 400);
+    })
+
     /* * * * * hover시 color변경 영역 * * * * */
     /* 서브메뉴 hover */
     $('.smenu>a').hover(function() {
