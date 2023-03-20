@@ -272,14 +272,14 @@ nav .subMenu .smenu a{
     position: absolute;
     top: 0;
     left: 0px;
-    width: 180px;
+    width: 75%;         /* 230318 수정*/
     height: 50px;
     padding: 10px 15px;
     border-radius: 20px 0 0 20px;
     border: 3px solid #bababa;
     border-right: none;
     outline: none;
-    background-color: rgb(32,23,67);
+    background-color: rgb(32,32,55);
     font-size: 14px;
     color: #ccc;
 }
@@ -290,8 +290,8 @@ nav .subMenu .smenu a{
 #header_search .srch_btn{
     position: absolute;
     top: 0;
-    right: 56px;
-    width: 50px;
+    right: 10%;         /* 230318 수정*/
+    width: 15%;         /* 230318 수정*/
     height: 50px;
     border-radius: 0 20px 20px 0;
     border: 3px solid #bababa;
@@ -301,6 +301,7 @@ nav .subMenu .smenu a{
 }
 #header_search .srch_btn img{
     position: relative;
+    margin: 0 auto;         /* 230318 수정*/
     width: 20px;
     filter: invert(80%);
 }
@@ -312,8 +313,7 @@ nav .subMenu .smenu a{
     top: 0;
     right: 0;
     margin: 0 10px;
-    color: rgb(32,32,55);
-
+    color: #fff;
 }
 /* title and BG img */
 #title_bg_wrap{
@@ -326,7 +326,7 @@ nav .subMenu .smenu a{
     position: absolute;
     width: 85%;
     /* border: 1px solid; */
-    height: 99px;
+    height: 95px; /* 크기 맞추기 */
     bottom: 0;
     font-size: 100px;
     text-align: left;
