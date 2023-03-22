@@ -212,6 +212,7 @@ nav .subMenu .smenu a{
     /* border: 1px solid black; */
     top: 75px;
     margin: 0 auto;
+    min-width: 1100px;          /* (한)230322 min-width추가*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; /* 수직정렬 */
