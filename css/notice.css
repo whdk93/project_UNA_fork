@@ -1,0 +1,15 @@
+@charset "utf-8";
+#contentArea {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+#noticeArea {
+    width: 85%;
+    position: relative;
+    margin: 0 auto;
+}
+.searchArea {
+    padding: 30px 0 12px;
+    position: relative;
+}
