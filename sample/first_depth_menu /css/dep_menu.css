@@ -161,35 +161,36 @@ nav .subMenu .smenu a{
     position: absolute;
     top: 0;
     left: 0px;
-    width: 180px;
+    width: 75%;         /* 230318 수정*/
     height: 50px;
     padding: 10px 15px;
     border-radius: 20px 0 0 20px;
     border: 3px solid #bababa;
     border-right: none;
     outline: none;
-    background-color: rgb(32,23,67);
+    background-color: #eee;
     font-size: 14px;
     color: #ccc;
 }
 #header_search input:focus{
-    color: #ccc;
+    color: #111;
     border-bottom: 3px solid #ccc;
 }
 #header_search .srch_btn{
     position: absolute;
     top: 0;
-    right: 56px;
-    width: 50px;
+    right: 10%;         /* 230318 수정*/
+    width: 15%;         /* 230318 수정*/
     height: 50px;
     border-radius: 0 20px 20px 0;
     border: 3px solid #bababa;
     border-left: none;
-    background-color: rgb(32,32,55);
+    background-color: #eee;
     cursor: pointer;
 }
 #header_search .srch_btn img{
     position: relative;
+    margin: 0 auto;         /* 230318 수정*/
     width: 20px;
     filter: invert(80%);
 }
@@ -201,8 +202,7 @@ nav .subMenu .smenu a{
     top: 0;
     right: 0;
     margin: 0 10px;
-    color: rgb(32,32,55);
-
+    color: #fff;
 }
 /* [S] #container */
 #dep_menu_wrap{
@@ -212,7 +212,6 @@ nav .subMenu .smenu a{
     /* border: 1px solid black; */
     top: 75px;
     margin: 0 auto;
-    min-width: 1100px;          /* (한)230322 min-width추가*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; /* 수직정렬 */
