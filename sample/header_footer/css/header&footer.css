@@ -180,6 +180,8 @@ nav .tMenu{
 nav .menu{
     position: relative;
     z-index: 10;
+    height: 100px;
+    width: auto;
 }
 nav .menu>a{
     display: inline-block;
@@ -200,10 +202,11 @@ nav .menu:last-child>a::after{
     content: none;
 } */
 
-nav .subMenu{
+.subMenu{
     display: none;
-    background-color: transparent;
+    background-color: #fff;
     border-bottom: 1px solid #ccc;
+    height: auto;
 }
 nav .subMenu .smenu{
     line-height: 50px;
