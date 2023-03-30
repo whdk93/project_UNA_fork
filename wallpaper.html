@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월페이퍼</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/wallpaper.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/header&footer.js"></script>
+</head>
+<body>
+      <!-------------------- [S] #wrap -------------------->
+      <div id="wrap">
+        <!-- bookmark_menu -->
+        <div id="bookmark_div_wrap">
+            <ul id="bookmark_ul">
+                <li class="bookmark_li bk_title">참여마당</li>
+                <li class="bookmark_li bk_li_1"><a href="#">두근두근 추첨마당</a></li>
+                <li class="bookmark_li bk_li_2"><a href="#">하루하루 체험마당</a></li>
+                <li class="bookmark_li bk_li_3"><a href="#">모여봐요 모임마당</a></li>
+                <li class="bookmark_li bk_li_4"><a href="#">복작복작 놀이마당</a></li>
+            </ul>
+            <!-- <div id="bookmark_sub_title"><span>참여마당</span></div> -->
+        </div>
+        <div id="go_up_div">
+            <img src="images/go_up.png" alt="위로이동" class="go_up_img">
+        </div>
+        <!---------- [S] header ---------->
+        <header>
+            <h1 class="home">
+                <span>우나</span>
+                <div class="logo">
+                    <img src="images/header/logoSample2.png" alt="logo" class="main_logo_img">
+                </div>
+            </h1>
+            <nav>
+                <ul class="tMenu">
+                    <li class="menu">
+                        <a href="#">우주마당</a>
+                        <ul class="subMenu">
+                            <li class="smenu"><a href="#">알아봐요 탐험마당</a></li>
+                            <li class="smenu"><a href="#">신기해요 소식마당</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">참여마당</a>
+                        <ul class="subMenu">
+                            <li class="smenu"><a href="#">두근두근 추첨마당</a></li>
+                            <li class="smenu"><a href="#">하루하루 체험마당</a></li>
+                            <li class="smenu"><a href="#">모여봐요 모임마당</a></li>
+                            <li class="smenu"><a href="#">복작복작 놀이마당</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">소식마당</a>
+                        <ul class="subMenu">
+                            <li class="smenu"><a href="#">여기주목 공지사항</a></li>
+                            <li class="smenu"><a href="#">반짝반짝 우리소개</a></li>
+                            <li class="smenu"><a href="#">공유해요 자료마당</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="login_area">
+                <ul>
+                    <li class="srch_btn"><a href="#"><img class="srch_img" src="images/search.png" alt="search"></a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+            <div id="header_search">
+                <form action="#" method="post" name="search">
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <label for="srch" class="hidden">검색</label>
+                        <input type="search" id="srch" placeholder="검색어를 입력하세요">
+                        <button type="submit" class="srch_btn"><img src="images/search.png" alt="search"></button>
+                    </fieldset>
+                </form>
+            </div>
+        </header>
+        <!---------- [E] header ---------->
+        <!-- h2 title and BG img div -->
+        <div id="title_bg_wrap">
+            <h2 id="sub_page_h2">공유해요 자료마당</h2>
+        </div>
+            <!---------- [S] #container ---------->
+            <div id="container">
+               
+                <div class="contentArea">
+                    <!-- 클릭시 팝업창 띄우는 사진을 누를 때 뒤배경은 회색 투명하게 하고  overlayer 위치나 그런 거 고정하고 사진 밑에 이미지 다운로드 글씨 누르면 다운로드 되게 하고 싶다 이거 사진을 this로 되나? $this
+                    저 이거 안되면 그냥 링크로 갈게요..-->
+                    <div class="pop_up">
+                        <div class="popup_img">
+                            <img src="" alt="">
+                            
+                        </div>
+                    </div>
+                    
+                    <!--
+
+                    -->
+                    <!-- 이미지 목록-->
+                    <div class="images">
+                        <div class="image_flex01">
+                            <a href="images/wallpaper01.jpg" download="images/wallpaper01.jpg"><img src="images/wallpaper01.jpg" alt="배경이미지"></a>
+                            <img src="images/wallpaper01.jpg" alt="배경이미지">
+                            <img src="images/wallpaper01.jpg" alt="배경이미지">
+                            <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image_flex02">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image_flex03">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        <img src="images/wallpaper01.jpg" alt="배경이미지">
+                        </div>
+                    </div>
+                </div>
+                <div class="wall_page">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                </div>
+            </div>
+            <!---------- [E] container ---------->
+        <!---------- [S] footer ---------->
+        <footer>
+            <div id="footer_link">
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">우리소개</a></li>
+                    <li><a href="#">자료마당</a></li>
+                    <li><a href="#">체험마당</a></li>
+                </ul>
+            </div>
+            <p class="copyright">
+                &copy; 2023 TeamSPACE. ALL RIGHTS RESERVED.
+            </p>
+        </footer>
+        <!---------- [E] footer ---------->
+    </div>
+    <!-------------------- [E] #wrap -------------------->
+    </div>
+</body>
+</html>
