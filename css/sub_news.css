@@ -1,87 +1,154 @@
 @charset "utf-8";
-
-div,a,form,input,button {
-    color: #333;
-    text-decoration: none;
-}
-.news_wrap {
+#news_wrap {
     position: relative;
     width: 100%;
     min-width: 1100px;
-    margin-top: 20px;    
+    margin-top: 35px;    
 }
-.news_list_board {
+/* 게시판 테이블 영역 */
+#news_table_wrap {
     position: relative;
-    width: 75%;
+    width: 65%;
+    min-width: 715px;
     margin: 0 auto;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
+}
+caption {
+    text-indent: -10000px;
+}
+.news_table_list {
+    width: 100%;
+    border-top: 2px solid rgb(67,68,67);
+}
+.news_table_list tr.hidden {
+    display: none;
 }
 .news_list {
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
     overflow: hidden;
 }
-.news_list>div {
-    position: relative;
+.news_list td {
     float: left;
+    font-family: 'sqneoEB';
 }
-.hidden {
-    display: block;
-    width: 1px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: -200px;
-    border: none;
+.news_num {
+    width: 7%;
+    padding: 56px 10px;
+    font-size: 14px;
 }
-.news_image {
-    width: 18%;
-    height: 145px;
-    margin: 0;
-    border: 1px solid;
-    margin: 10px 0;
-}
-.news_image_link {
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: -48px;
-    height: 145px;
-    background: url(image/uiv01.jpg);
-}
-.news_title, .news_txt, .news_date {
-    width: 70%;
-    margin-top: 10px;
-    margin-left: 10px;    
-}
-.news_page_board {
-    /* position: relative; */
-    text-align: center;
-    padding: 20px 0;
-    letter-spacing: 2px;
-}
-.news_pbt {
-    text-decoration: none;
-}
-.news_pbt:hover {
-    color: red;
-}
-.news_search_wrap {
+.news_title {
     position: relative;
-    width: 85%;
-    min-width: 1100px;    
+    width: 75%;
+    height: 100px;
+    margin: 14px 0;
+}
+.news_img_link {
+    display: inline-block;
+    width: 180px;
+    height: 100px;
+    margin-right: 10px;
+}
+.news_img_link img {
+    width: 180px;
+    height: 100px;
+}
+.news_title_link {
+    position: absolute;
+    display: inline-block;
+    /* width: calc(100%-200px); */
+    top: 20px;
+    /* left: 230px; */
+    font-size: 25px;
+    font-family: 'sqneoEB';
+}
+.news_title_link:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+.news_title_prev {
+    position: absolute;
+    display: inline-block;
+    min-width: 300px;
+    top: 57px;
+    font-size: 15px;
+}
+.news_date {
+    width: 10%;
+    min-width: 100px;
+    padding: 55px 0px;
+    padding-right: 0;
+    margin-left: 10px;
+    font-size: 14px;    
+}
+/* 버튼 영역 */
+#news_btn_wrap {
+    position: relative;
+    width: 65%;
     margin: 0 auto;
 }
-.news_search_form {
-    position: relative;  
+/* 글쓰기 버튼 영역 */
+#news_write {
+    text-align: right;
+    margin-top: 18px;
 }
-.news_search_fieldset {
-    position: absolute;
-    right: 7%;
-    top: -60px;
-    border: none;
+.news_write_btn {
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 15px;
 }
-#news_search_window{
-    width:150px;
+/* 페이지 버튼 영역 */
+#news_page {
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    top: 50px;
+}
+#news_page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    padding: 9px;
+    font-size: 15px;
+}
+#news_page a:first-child {
+    border-left: 1px solid #ddd;
+}
+#news_page a.btn_prev,
+#news_page a.btn_next {
+    letter-spacing: -1px;
+}
+#news_page a.num.click {
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+}
+/* 검색 버튼 영역 */
+#news_search_wrap {
+    position: relative;
+    text-align: center;
+    top: 80px;
+}
+#news_search_menu {
+    width: 70px;
+    height: 30px;
+}
+#news_search_content {
+    padding: 6px;
+}
+#news_search_btn {
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
 }

@@ -180,6 +180,8 @@ nav .tMenu{
 nav .menu{
     position: relative;
     z-index: 10;
+    height: 100px;
+    width: auto;
 }
 nav .menu>a{
     display: inline-block;
@@ -200,10 +202,11 @@ nav .menu:last-child>a::after{
     content: none;
 } */
 
-nav .subMenu{
+.subMenu{
     display: none;
-    background-color: transparent;
+    background-color: #fff;
     border-bottom: 1px solid #ccc;
+    height: auto;
 }
 nav .subMenu .smenu{
     line-height: 50px;
@@ -279,12 +282,12 @@ nav .subMenu .smenu a{
     border: 3px solid #bababa;
     border-right: none;
     outline: none;
-    background-color: rgb(32,32,55);
+    background-color: #eee;
     font-size: 14px;
     color: #ccc;
 }
 #header_search input:focus{
-    color: #ccc;
+    color: #111;
     border-bottom: 3px solid #ccc;
 }
 #header_search .srch_btn{
@@ -296,7 +299,7 @@ nav .subMenu .smenu a{
     border-radius: 0 20px 20px 0;
     border: 3px solid #bababa;
     border-left: none;
-    background-color: rgb(32,32,55);
+    background-color: #eee;
     cursor: pointer;
 }
 #header_search .srch_btn img{
