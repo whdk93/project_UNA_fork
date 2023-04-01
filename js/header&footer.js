@@ -1,12 +1,19 @@
 $(function() {
-    $('.tMenu>.menu').hover(function() {
-        $(this).find('.subMenu').stop(false, false).css({
-            backgroundColor : "#fefefe"
+
+    //탑메뉴 hover
+    $('.menu').hover(function() {
+        index=$(this).index();
+        pagenum=index+1;
+        $(".subMenu"+pagenum).stop(false, false).css({
+            backgroundColor : "#fefefe",
+            height : "auto"
         }).slideDown(300);
-        $(this).find('a').css(color = '#fff');
+        $(".subMenu"+pagenum).find('a').css(color = '#fff');
     }, function() {
-        $(this).find('.subMenu').stop(true, true).slideUp(300);
+        $(".subMenu"+pagenum).stop(true, true).slideUp(300);
     });
+
+    //
     $('.home').click(function() {
         window.location = 'index.html'
     });
