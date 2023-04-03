@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* * * * * * * * * * header 영역 * * * * * * * * * */
+html,body, #wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1100px;
+}
+/* 드래그 불가 */
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+/* * * * * * * * * * [S] title_bg_wrap * * * * * * * * * */
+#title_bg_wrap{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/bg_sample.jpeg);
+}
+/* * * * * * * * * * [S] #container * * * * * * * * * */
+#container{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: transparent;
+    margin-bottom: 80px;
+}
+#polygon_area{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    /* border: 3px solid green; */
+}
+#polygon_area .poly_count{
+    text-align: center;
+    margin: 10px 0;
+}
+/*index에서만 사용됨*/
+#polygon_area .poly_count.hidden{
+    visibility: hidden;
+}
+/* 메인 육각형 */
+.polygon_border{
+    position: relative;
+    margin: 0 auto;
+    width: 392px;
+    height: 460px;
+    background: #7000ff;
+    font-size: 20px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.polygon{
+    position: relative;
+    width: 382px;
+    height: 450px;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+    font-size: 20px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/* 서브 육각형 */
+.sub_polygon_border{
+    position: absolute;
+    width: 265px;
+    height: 310px;
+    left: 50%;
+    margin-left: -132.5px;
+    top: 158px;
+    background: #7000ff;
+    font-size: 20px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.sub_polygon{
+    position: absolute;
+    width: 255px;
+    height: 300px;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+    font-size: 20px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#poly_good{
+    margin-left: -524.5px;
+}
+#poly_bad{
+    margin-left: 259.5px;
+}
+/* 메인 육각형 내부 */
+.polygon_border .umbti_area{
+    position: relative;
+    width: 382px;
+    height: 382px;
+    top: 40px;
+    /* border: 1px solid red; */
+}
+/* 서브 육각형 내부 */
+.sub_polygon_border .umbti_area{
+    position: relative;
+    width: 255px;
+    height: 255px;
+    top: 20px;
+    /* border: 1px solid red; */
+}
+.umbti_area p{
+    position: absolute;
+    width: 100%;
+    /* border: 1px solid navy; */
+    padding: 0px 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'sqneoEB';
+    z-index: 10;
+}
+.umbti_area p.umbti_head{
+    top: 60px;
+    font-size: 25px;
+}
+.umbti_area p.umbti_result_name{
+    top: 130px;
+    font-family: 'sqneoHV';
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff,
+                -1px 1px 1px #fff, 1px -1px 1px #fff;
+}
+.umbti_area p.umbti_result_explanation{
+    bottom: 60px;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff;
+}
+.umbti_area img{
+    position: relative;
+    display: block;
+    height: 150px;
+    margin: 0 auto;
+    top: 50px;
+    opacity: 0.3;
+}
+.polygon .umbti_area img{
+    top: 100px;
+}
+#polygon_area .test_restart{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto;
+    font-family: 'sqneoEB';
+    text-align: center;
+    border: 3px solid #7000ff;
+    border-radius: 25px;
+    background-color: #fff;
+    line-height: 44px;
+    cursor: pointer;
+}
+#polygon_area .test_restart:hover{
+    background-color: #7000ff;
+    color: #fff;
+}
+#polygon_area .share{
+    position: relative;
+    text-align: center;
+    top: -20px;
+    cursor: pointer;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우나엠비티아이</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/umbti.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/dep_menu.js"></script>
+    <script src="js/umbti.js"></script>
+    <script src="js/header&footer.js"></script>
+</head>
+<body>
+    <!-------------------- [S] #wrap -------------------->
+    <div id="wrap">
+        <!-------------------- [S] #wrap -------------------->
+        <div id="wrap">
+            <!-- bookmark_menu -->
+            <div id="bookmark_div_wrap">
+                <ul id="bookmark_ul">
+                    <li class="bookmark_li bk_title">참여마당</li>
+                    <li class="bookmark_li bk_li_1"><a href="#">두근두근 추첨마당</a></li>
+                    <li class="bookmark_li bk_li_3"><a href="#">모여봐요 모임마당</a></li>
+                    <li class="bookmark_li bk_li_4"><a href="#">복작복작 놀이마당</a></li>
+                </ul>
+            </div>
+        <!---------- [S] header ---------->
+        <header>
+            <h1 class="home">
+                <span>우나</span>
+                <div class="logo">
+                    <img src="images/header/logoSample2.png" alt="logo" class="main_logo_img">
+                </div>
+            </h1>
+            <nav>
+                <ul class="tMenu">
+                    <li class="menu">
+                        <a href="#">우주마당</a>
+                        <ul class="subMenu">
+                            <li class="smenu"><a href="#">알아봐요 탐험마당</a></li>
+                            <li class="smenu"><a href="#">신기해요 소식마당</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">참여마당</a>
+                        <ul class="subMenu">
+                            <li class="smenu"><a href="#">두근두근 추첨마당</a></li>
+                            <li class="smenu"><a href="#">모여봐요 모임마당</a></li>
+                            <li class="smenu"><a href="#">복작복작 놀이마당</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">알림마당</a>
+                        <ul class="subMenu">
+                            <li class="smenu"><a href="#">여기주목 공지사항</a></li>
+                            <li class="smenu"><a href="#">반짝반짝 우리소개</a></li>
+                            <li class="smenu"><a href="#">공유해요 자료마당</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="login_area">
+                <ul>
+                    <li class="srch_btn"><a href="#"><img class="srch_img" src="images/search.png" alt="search"></a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+            <div id="header_search">
+                <form action="#" method="post" name="search">
+                    <fieldset>
+                        <legend>검색영역</legend>
+                        <label for="srch" class="hidden">검색</label>
+                        <input type="search" id="srch" placeholder="검색어를 입력하세요">
+                        <button type="submit" class="srch_btn"><img src="images/search.png" alt="search"></button>
+                    </fieldset>
+                </form>
+            </div>
+        </header>
+        <!---------- [E] header ---------->
+        <!---------- [S] h2 title and BG img div ---------->
+        <div id="title_bg_wrap">
+            <h2 id="sub_page_h2">복작복작 놀이마당</h2>
+        </div>
+        <!---------- [E] h2 title and BG img div ---------->
+        <!---------- [S] #container ---------->
+        <div id="container">
+            <!-- 이미지+타이틀 추가해야 함 -->
+            <!-- width 65%인 내용 영역 -->
+            <div id="polygon_area">
+                <!-- 상단 진행도 숫자표시 영역 -->
+                <div class="poly_count"><span class="num_ing">1</span>/12</div>
+                <!-- 육각형 영역 테두리 -->
+                <div id="polygon_border">
+                    <!-- 육각형 영역 내부 -->
+                    <div id="polygon">
+                        <!-- 내부 진행도 표시 영역 // 잠시보류! -->
+                        <div class="poly_ing"></div>
+                        <!-- umbti질문지 및 선택지*12 영역 -->
+                        <div id="umbti_area">
+                            <!-- 1 -->
+                            <div class="umbti umbti1">
+                                <p class="umbti_q">umbti의 협곡에 오신 것을 환영합니다.<br>문장을 꼼꼼히 읽어주세요.</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">입장하기</p>
+                                    <p class="umbti_btn umbti_btn2">입장 안 하기는 없습니다.</p>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="umbti umbti2">
+                                <p class="umbti_q">한 줄 일 때는 이렇게 보여요</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">우와</p>
+                                    <p class="umbti_btn umbti_btn2">신기하다</p>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="umbti umbti3">
+                                <p class="umbti_q">두 줄 일 때는<br>이렇게 보여요.</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">두 줄이 가장</p>
+                                    <p class="umbti_btn umbti_btn2">안정적인 구조입니다.</p>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="umbti umbti4">
+                                <p class="umbti_q">세 줄 일 때는<br>이렇게<br>보여요</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">더 많은 글자가 보고싶다면</p>
+                                    <p class="umbti_btn umbti_btn2">하세요 클릭</p>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="umbti umbti5">
+                                <p class="umbti_q">따로 줄바꿈을 하지 않아도 자동적으로 줄바꿈이 됩니다. 왜냐? 그렇게 설정했으니까요.</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">별거 아닌데</p>
+                                    <p class="umbti_btn umbti_btn2">대단한 척 함</p>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="umbti umbti6">
+                                <p class="umbti_q">네 줄은 없어요</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">네 줄도 궁금하다면</p>
+                                    <p class="umbti_btn umbti_btn2"></p>
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="umbti umbti7">
+                                <p class="umbti_q">네<br>줄<br>짜<br>리</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">넘쳐용</p>
+                                    <p class="umbti_btn umbti_btn2">네줄 불가</p>
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="umbti umbti8">
+                                <p class="umbti_q">상단 숫자 진행도는 보셨겠죠?</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">엥 그런게?</p>
+                                    <p class="umbti_btn umbti_btn2">고롬고롬 봤지</p>
+                                </div>
+                            </div>
+                            <!-- 9 -->
+                            <div class="umbti umbti9">
+                                <p class="umbti_q">뒤로가기 버튼은 눌러보셨나요?</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">눌러봤다</p>
+                                    <p class="umbti_btn umbti_btn2">이제 눌러 보겠다</p>
+                                </div>
+                            </div>
+                            <!-- 10 -->
+                            <div class="umbti umbti10">
+                                <p class="umbti_q">1페이지에서 2페이지로 넘어가면 뒤로가기 버튼이 생깁니다.</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">알고 있었다</p>
+                                    <p class="umbti_btn umbti_btn2">몰랐다</p>
+                                </div>
+                            </div>
+                            <!-- 11 -->
+                            <div class="umbti umbti11">
+                                <p class="umbti_q">뒤로 갔을 때 이전에 선택한 버튼이 남아있으면 좋겠다, 아니다?</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">남았으면 좋겠다</p>
+                                    <p class="umbti_btn umbti_btn2">없는게 더 좋다</p>
+                                </div>
+                            </div>
+                            <!-- 12 -->
+                            <div class="umbti umbti12">
+                                <p class="umbti_q">사실 남길 수는 없습니다. 기술적인 한계.</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">한계는 없다. 할 수 있었습니다.</p>
+                                    <p class="umbti_btn umbti_btn2">12번까지 끝!</p>
+                                </div>
+                            </div>
+                            <!-- 결과창 -->
+                            <div class="umbti umbti_result">
+                                <p class="umbti_q">모든 문항이 끝났습니다!<br>개발자도구에서 콘솔창을 확인해주세요.</p>
+                                <div class="umbti_ans">
+                                    <p class="result_btn" onclick="location.href='umbti-result.html'">결과보기</p>
+                                </div>
+                            </div>
+                            <!-- sample -->
+                            <!-- <div class="umbti umbti8">
+                                <p class="umbti_q">우리팀의 주제가 우주로 결정되었다.<br>이 때, 나의 행동은?</p>
+                                <div class="umbti_ans">
+                                    <p class="umbti_btn umbti_btn1">우주? 사전조사 바로 진행</p>
+                                    <p class="umbti_btn umbti_btn2">우와, 우주라니 멋있다!</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="prev_arrow"></div>
+                    </div>
+                </div>
+                <!-- 하단 '우나프로젝트' 영역 -->
+                <div class="our_name" title="홈으로 이동 or 우나프로젝트 설명으로 이동" onclick="location.href='../index/index.html'">
+                    우나프로젝트
+                </div>
+            </div>
+        </div>
+        <!---------- [E] container ---------->
+        <!---------- [S] footer ---------->
+        <footer>
+            <div id="footer_link">
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">우리소개</a></li>
+                    <li><a href="#">자료마당</a></li>
+                    <li><a href="#">체험마당</a></li>
+                </ul>
+            </div>
+            <p class="copyright">
+                &copy; 2023 TeamSPACE. ALL RIGHTS RESERVED.
+            </p>
+        </footer>
+        <!---------- [E] footer ---------->
+    </div>
+    <!-------------------- [E] #wrap -------------------->
+</body>
+</html>

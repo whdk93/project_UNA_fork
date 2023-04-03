@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* * * * * * * * * * header 영역 * * * * * * * * * */
+html,body,#wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1100px;
+}
+/* 드래그 불가 */
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+/* * * * * * * * * * [S] title_bg_wrap * * * * * * * * * */
+#title_bg_wrap{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/bg_sample.jpeg);
+}
+/* * * * * * * * * * [S] #container * * * * * * * * * */
+#container{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: transparent;
+    margin-bottom: 80px;
+}
+#polygon_area{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+#polygon_area .poly_count{
+    text-align: center;
+    margin: 10px 0;
+}
+/*index에서만 사용됨*/
+#polygon_area .poly_count.hidden{
+    visibility: hidden;
+}
+#polygon_border{
+    position: relative;
+    margin: 0 auto;
+    width: 392px;
+    height: 460px;
+    background: #7000ff;
+    font-size: 20px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#polygon{
+    position: relative;
+    width: 382px;
+    height: 450px;
+    top: 5px;
+    left: 5px;
+    background: #fff;
+    font-size: 20px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#umbti_area{
+    position: relative;
+    width: 400px;
+    height: 450px;
+}
+#umbti_area .umbti{
+    position: relative;
+    width: 382px;
+    height: 225px;
+    top: 110px;
+    text-align: center;
+    float: left;
+}
+#umbti_area .umbti_btn:hover{
+    background-color: #7000ff;
+    color: #fff;
+}
+#umbti_area .result_btn:hover{
+    background-color: #7000ff;
+    color: #fff;
+}
+#umbti_area .our_name{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 0px auto;
+    font-family: 'sqneoEB';
+    text-align: center;
+    border: 3px solid #7000ff;
+    border-radius: 25px;
+    background-color: #fff;
+    line-height: 44px;
+}
+#polygon_area .umbti_title{
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    width: 700px;
+    margin-left: -350px;
+    padding: 10px 0;
+    font-size: 50px;
+    font-family: 'sqneoEB';
+    text-align: center;
+    z-index: 10;
+    background-color: #fff;
+}
+#polygon_area .umbti_start{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 30px auto;
+    font-family: 'sqneoEB';
+    text-align: center;
+    border: 3px solid #7000ff;
+    border-radius: 25px;
+    background-color: #fff;
+    line-height: 44px;
+    cursor: pointer;
+}
+#polygon_area .umbti_start:hover{
+    background-color: #7000ff;
+    color: #fff;
+}
+#polygon_area .umbti_now{
+    position: relative;
+    text-align: center;
+    top: -20px;
+}
