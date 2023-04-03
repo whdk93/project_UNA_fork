@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* * * * * * * * * * header 영역 * * * * * * * * * */
+/* html,body,#wrap{
+    position: relative;
+    min-width: 1100px;
+} */
+/* * * * * * * * * * [S] #container * * * * * * * * * */
+#container{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+/* width 65%영역 */
+#photo_area{
+    position: relative;
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    z-index: 100;
+    border: 10px solid #000;
+}
+/* 선택된 사진이 뜨는 영역 */
+#photo_onload{
+    position: relative;
+    width: 99.99%;
+     /*4:3비율*/
+    --onloadWidth: 940px;
+    height: calc(var(--onloadWidth) * 3 / 4);
+    padding: 0;
+    background-color: #ccc;
+    overflow: hidden;
+}
+#photo_onload p{
+    position: relative;
+    top: 50%;
+    margin-top: -35px;
+    text-align: center;
+    font-family: 'sqneoEB';
+    font-size: 70px;
+    font-style: italic;
+    color: #aaa;
+}
+#bg_img_click{
+    position: absolute;
+    left: 1px;
+    width: 99.99%;
+    min-height: 99.99%;
+}
+#load_zone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* width: 99.99%;
+    height: 99.99%; */
+    overflow: hidden;
+}
+#load_zone .user_photo_div{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    z-index: 10;
+}
+#load_zone .user_photo_div::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+#user_photo{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+/* 사진 선택 영역 */
+#photo_choice{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #000;
+    overflow: hidden;
+    border: 3px solid #000;
+}
+#choice_zone{
+    position: relative;
+    width: auto;
+    padding: 2% 3%;
+    margin: 0 auto;
+}
+#choice_zone .bg_img{
+    position: relative;
+    margin-right: 2%;
+    width: calc((100% / 4) - 2%);
+    aspect-ratio: 4/3;
+    float: left;
+    overflow: hidden;
+}
+#choice_zone .bg_img:first-child{
+    margin-left: 1%;
+}
+#choice_zone .bg_img:last-child{
+    margin-right: 1%;
+}
+#choice_zone .bg_img:hover>img{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+#choice_zone .bg_img img{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    float: left;
+}
+/* 업로드, 다운로드 영역 */
+#photo_btn_area{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    padding: 0 30px;
+    background-color: #000;
+    /* border: 1px solid navy; */
+}
+#photo_upload, #photo_download{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    top: 50px;
+    border-radius: 20px;
+    background-color: #7000ff;
+    text-align: center;
+}
+#photo_upload:hover, #photo_download:hover{
+    top: 48px;
+}
+#photo_upload{
+    float: left;
+}
+#photo_download{
+    float: right;
+}
+#photo_upload label{
+    color: #fff;
+    font-family: 'sqneoEB';
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 50px;
+}
+#photo_upload input{
+    display: none;
+}
+#photo_download p{
+    color: #fff;
+    font-family: 'sqneoEB';
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 50px;
+}
