@@ -108,12 +108,13 @@
     display: inline-block;
     padding: 10px 20px;
     vertical-align: middle;
-    background-color: #bbb4b4;
+    background-color: #000;
     cursor: pointer;
-    border: 1px solid #bbb4b4;
-    border-radius: 5px;
+    border: 1px solid #000;
+    color: #fff;
     left: 41px;
     bottom: 15px;
+    font-size: 15px;
 
   }
 
@@ -143,6 +144,7 @@ border: 1px solid #000;
 border-radius: 2px;
 font-size: 15px;
 cursor: pointer;
+font-family: 'sqneo';
 }
 
 #write_btn_wrap #write_register {
