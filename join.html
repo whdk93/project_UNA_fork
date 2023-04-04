@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/join.js"></script>
+</head>
+<body>
+    <div id="join_wrap">
+        <div class="join_area">
+            <form action="#" method="post" name="login">
+                <div class="logo_area"><a href="#"><img src="images/logoSample2.png" alt="로고" width="150" height="150"></a></div>
+                <p class="join">회원가입</p>
+                <div class="join_background">
+                <fieldset>
+                    <div>
+                        <label for="name">성명</label>
+                        <input type="text" id="name" name="name" maxlength=20 required>                             
+                    </div>  
+                     <div>
+                        <label for="id">아이디</label>
+                        <input type="text" id="id" name="id" maxlength=20 required>   
+                        <a href="#" class="id_check">중복확인</a>                        
+                     </div>
+                      <div>
+                        <label for="pwd">비밀번호</label>
+                        <input type="password" id="pwd" name="pwd" maxlength=12 placeholder="12자 이하로 입력해주세요" required>                
+                      </div>
+                      <div>
+                        <label for="confirm_pwd">비밀번호 확인</label>
+                        <input type="password" id="confirm_pwd" name="confirm_pwd" maxlength=12 required>     
+                      </div> 
+                      <div id="pwd_same_comfrim"></div>      
+                      <div>
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel" name="tel" maxlength="20" placeholder="-은 제외하고 입력해주세요">                
+                      </div>
+                      <div>
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" maxlength="20" required placeholder="una@una.com">                
+                      </div>
+                      <div class="btn_join_area">
+                        <button type="submit" class="btn_join">회원가입</button>
+                      </div>           
+                </fieldset> 
+            </div>               
+            </form>   
+        
+    </div> 
+    </div> 
+ </body>
+</html>
+    
