@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+#write_wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1100px;
+    margin-top: 50px;
+}
+
+#write_container {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-top: 2px solid #000;
+}
+
+#write_container .write_title .write_name {
+    width: 100px;
+}
+
+#write_container .write_title .write_text {
+    width: 100%;
+}
+
+#write_container .write_title {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    }
+    
+
+#write_container .write_title input
+ {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+    #write_container .write_title ul {
+    font-size: 0;
+    }
+    
+    #write_container .write_title .write_name,
+    #write_container .write_title .write_text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    }
+    
+    
+    #write_container .write_title .write_text {
+    width: calc(100% - 100px);
+    }
+    
+
+    #write_container .write_content {
+    border-bottom: 1px solid #ccc;
+    }
+    
+    #write_container .write_content textarea {
+    display: block;
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    }
+
+    .write_content textarea {
+        resize: none;
+    }
+
+/* 글쓰기 첨부파일 영역 */
+
+#file_wrap{
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+    bottom: 15px;
+    padding-left: 13px;
+}
+
+#file_wrap fieldset{
+    display: flex;
+}
+
+#file_wrap fieldset p{
+    position: relative;
+    bottom: 5px;
+    left: 2px;
+}
+
+#file_wrap input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    left: 41px;
+    bottom: 15px;
+
+  }
+  
+  #file_wrap label {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    vertical-align: middle;
+    background-color: #747272;
+    cursor: pointer;
+    border: 1px solid #747272;
+    border-radius: 2px;
+    left: 41px;
+    bottom: 15px;
+    color:#fff;
+    font-size: 13px;
+    box-shadow: 0 5px 5px -5px #6e6d6d,
+    -5px 0 5px -5px #6e6d6d, 
+    5px 0 5px -5px #6e6d6d;
+
+  }
+
+  .file_text {
+    position: relative;
+    padding: 8px;
+    left: 41px;
+    bottom: 15px;
+    margin-right: 5px;
+  }
+  
+
+/* 글쓰기 버튼 영역 */
+#write_btn_wrap {
+margin-top: 30px;
+text-align: center;
+font-size: 0;
+
+}
+
+#write_btn_wrap input {
+display: inline-block;
+width: 90px;
+margin-left: 10px;
+margin-top: 20px;
+padding: 12px;
+border: 1px solid #000;
+border-radius: 2px;
+cursor: pointer;
+font-size: 18px;
+}
+
+#write_btn_wrap #write_register {
+margin-left: 0;
+}
+
+#write_btn_wrap #write_register{
+    background: #fff;
+    color: #000;
+    box-shadow: 0 5px 5px -5px #807e7e,
+-5px 0 5px -5px #807e7e, 
+5px 0 5px -5px #807e7e;
+
+}
+
+#write_btn_wrap #write_cancle{
+background: #000;
+color: #fff;
+box-shadow: 0 5px 5px -5px #1d1d1d,
+-5px 0 5px -5px #1d1d1d, 
+5px 0 5px -5px #1d1d1d;
+}
+
+
