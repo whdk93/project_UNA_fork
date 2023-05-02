@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+div,a,form,input,button {
+    color: #333;
+    text-decoration: none;
+}
+.view_wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1100px;
+    margin-top: 50px;    
+}
+.view_detail {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    border-top: 3px solid #333;
+}
+.view_title {
+    padding: 20px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.view_info {
+    padding: 15px;
+}
+.view_info_detail {
+    overflow: hidden;
+    font-size: 14px;
+}
+.point {
+    font-weight: bold;
+}
+.point::after {
+    content: "";
+    margin-right: 5px;
+}
+.view_info_detail li {
+    float: left;
+    padding-right: 20px;
+}
+.view_info_detail li:after {
+    content: "|";
+    margin-left: 10px;
+}
+.view_info_detail li:last-of-type::after {
+    content: "";
+}
+.view_content {
+    border-top: 1px solid #999;
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    line-height: 150%;
+}
+.view_comment {
+    border-bottom: 3px solid #333;
+    padding: 15px;
+}
+.view_comment_detail {
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+.comment_writer {
+    font-weight: bold;
+}
+.comment_content {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #eee;
+}
+.comment_btn {
+    text-align: right;
+}
+.comment_btn a {
+    font-size: 14px;
+}
+.add_comment_detail {
+    width: 100%;
+}
+.add_comment_writer {
+    width: 10%;
+    font-weight: bold;
+}
+#add_comment_input {
+    width: 85%;
+    padding: 10px 0;
+    margin-left: 5px;
+}
+#add_comment_btn {
+    padding: 6px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 15px;
+    background-color: #333;
+    color: #fff;
+}
+.event_btn_wrap {
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+.event_btn_wrap>a {
+    display: inline-block;
+    padding: 10px 20px; 
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 16px;
+}
+.event_btn_wrap>a.on {
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+}
+.event_view_modify {
+    margin-left: 10px;
+}
+/*
+.event_search_fieldset {
+    position: absolute;
+    left: 80%;
+    top: -60px;
+    display: inline-block;
+    border: none;
+} */

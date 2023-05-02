@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+div,a,form,input,button {
+    color: #333;
+    text-decoration: none;
+}
+.write_wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1100px;
+    margin-top: 50px;
+}
+.write_typing_wrap {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    border-top: 3px solid #333;
+}
+.write_title{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.write_title dl {
+    font-size: 0;
+}
+.write_title dt,
+.write_title dd{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.write_title dt,
+.write_info dt {
+    width: 100px;
+}
+.write_title dd {
+    width: calc(100% - 100px);
+}
+.write_title input[type="text"],
+.write_info input[type="text"],
+.write_info input[type="password"] {
+    padding: 5px;
+    box-sizing: border-box;
+}
+.write_title input[type="text"] {
+    width: 80%;
+}
+.write_content_wrap {
+    border-bottom: 1px solid #333;
+}
+#write_content {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+}
+.write_btn_wrap {
+    margin-top: 40px;
+    font-size: 0;
+    text-align: center;
+}
+.write_submit,
+.write_cancel {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;    
+}
+.write_cancel {
+    margin-left: 10px;
+}
