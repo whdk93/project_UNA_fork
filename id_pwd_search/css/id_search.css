@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+#id_search_wrap{
+    position: relative;
+    width: 100%;
+    min-width: 1100px;  
+}
+
+.id_search {
+    position: relative;
+    width: 65%;
+    min-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+fieldset {
+   margin: 20px 0 20px 0;
+}
+
+.id_search_title{
+    font-family: 'sqneoHV';
+    font-size: 40px;
+    opacity: 0.8;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.name_top{
+   padding-top: 20px;
+}
+
+.id_search_bg {
+    width: 725px;
+    height: 610px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background-color: #e2dede;
+    border-radius: 30px;
+    color:  #000;
+    text-align: center;
+    
+}
+
+.id_search_bg div {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+.id_search_bg fieldset{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.id_search_bg fieldset div{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #666363;
+}
+
+.id_search_bg fieldset div:nth-child(2){
+    margin-top: 50px;
+}
+
+.id_search_bg fieldset div:nth-child(5), .id_search_bg fieldset div:nth-child(6),
+.id_search_bg fieldset div:nth-child(1){
+    border-style: none;
+}
+
+.id_search_bg fieldset div label{
+    position: relative;
+    bottom: 10px;
+    color: #3b3838;
+}
+
+.id_search_bg fieldset div input{
+    display: block;   
+    background-color: transparent;
+    border: none;  
+    font-size: 15px;
+    text-indent: 10px;
+}
+
+.id_search_bg fieldset div input:focus {
+    outline: none;
+}
+
+.id_search_bg fieldset div .id_check{
+    position: relative;
+    float: right;
+    border: 1px solid #000;
+    bottom: 30px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;   
+}
+
+.id_search_bg fieldset div:nth-child(5) {
+    text-align: center;
+}
+
+.id_search_bg fieldset .id_search_btn_wrap .id_search_btn{
+    border: 1px solid rgb(132, 151, 171);
+    background: rgb(132, 151, 171);
+    box-shadow: 0 5px 5px -5px rgb(82, 93, 105),
+    -5px 0 5px -5px rgb(82, 93, 105), 
+    5px 0 5px -5px rgb(82, 93, 105);
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'sqneoEB';
+    display: inline;
+    width: 175px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+#pwd_login_wrap{
+    position: relative;
+    bottom: 35px;
+}
+
+#pwd_login_wrap ul{
+    text-align: center;
+}
+
+#pwd_login_wrap ul li{
+    display: inline-block;
+}
+
+#pwd_login_wrap ul li:nth-child(1){
+    margin-right: 10px;
+}
