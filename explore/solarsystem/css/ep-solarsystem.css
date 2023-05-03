@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+    --polygon-tb: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    --polygon-color: #7000FF 0%, #9E52FF 70.1%, #FFFFFF 98.97%;
+    --main-color: #7000FF;
+}
+/* * * * * * * * * * header 영역 * * * * * * * * * */
+html,body,#wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1100px;
+}
+/* 드래그 불가 */
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    /* overflow: hidden; */
+}
+/* * * * * * * * * * [S] #container * * * * * * * * * */
+#container{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 100px;
+    background-color: transparent;
+    /* margin-bottom: 0px; */
+    /* border: 3px solid red; */
+}
+#book_area{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    /* border: 3px solid yellow; */
+}
+#explain_area{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    margin-top: 30%;
+    text-align: center;
+}
+#explain_area p span{
+    position: relative;
+    font-family: 'sqneoEB';
+}
+#explain_area .ep_title{
+    font-size: 45px;
+    color: #555;
+    line-height: 100px;
+}
+#explain_area .ep_content{
+    font-size: 15px;
+    font-style: italic;
+    color: #999;
+}
+#book_shelf{
+    position: relative;
+    padding: 0 60px;
+    height: 100%;
+    width: 70%;
+    /* border: 3px solid blue; */
+}
+.img_shelf{
+    position: absolute;
+    width: 80%;
+    top: 250px;
+    z-index: 1;
+}
+.img_shelf2{
+    left: 60px;
+    top: 610px;
+}
+.book{
+    position: relative;
+    display: inline-block;
+    margin: 100px auto;
+    width: 240px;
+    height: 160px;
+    /* border: 3px solid salmon; */
+    z-index: 10;
+}
+.book:hover{
+    transition: transform 1s;
+    transform: scale(1.05);
+}
+.page{
+    position: relative;
+    margin: 0 auto;
+    /* width: 461px;
+    height: 600px; */
+    width: 120px;
+    height: 160px;
+    border: 3px solid navy;
+    background-size: cover;
+}
+.book1 .page1{background-image: url(../pages/1.jpg);}
+.book1 .page2{background-image: url(../pages/2.jpg);}
+.book1 .page3{background-image: url(../pages/3.jpg);}
+.book1 .page4{background-image: url(../pages/4.jpg);}
+.book1 .page5{background-image: url(../pages/5.jpg);}
+.book1 .page6{background-image: url(../pages/6.jpg);}
+.book1 .page7{background-image: url(../pages/7.jpg);}
+.book1 .page8{background-image: url(../pages/8.jpg);}
+.book1 .page9{background-image: url(../pages/9.jpg);}
+.page1~.page{
+    display: none;
+}
+
+.book2 .page1{background-image: url(../pages/1.jpg);}
+.book3 .page1{background-image: url(../pages/1.jpg);}
+#book {
+    margin: 100px auto;
+    width: 922px;
+    height: 600px;
+    border: 3px solid salmon;
+}
+
+#book .turn-page {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#book div {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
