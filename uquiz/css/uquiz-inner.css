@@ -65,47 +65,85 @@ html,body,#wrap{
     -webkt-clip-path: var(--polygon);
     clip-path: var(--polygon);
 }
-#polygon1{
+#polygon_text{
     position: relative;
-    width: 580px;
-    height: 493px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    top: 15px;
-    background: linear-gradient(180deg, var(--polygon-color));
-    -webkt-clip-path: var(--polygon);
-    clip-path: var(--polygon);
-}
-#polygon1 .uquiz_title{
-    position: relative;
-    top: 100px;
-    font-family: 'sqneoHV';
-    font-size: 80px;
-    color: #fff;
     text-align: center;
 }
-#uquiz_start_area{
-    position: relative;
-    width: 50%;
-    height: 50px;
-    top: 220px;
-    margin: 0 auto;
-    border-radius: 25px;
-    background: #fff;
-    cursor: pointer;
-}
-#uquiz_start_area p{
-    line-height: 50px;
-    font-size: 30px;
-}
-#polygon1 .uquiz_start_btn{
+#polygon_text .today_date{
     position: relative;
     font-family: 'sqneoEB';
-    color: transparent;
+    font-size: 20px;
+    color: #000;
+    top: 20px;
     text-align: center;
-
-    background: linear-gradient(92.29deg, #7000FF 0%, #c392ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* text-fill-color: transparent; */
+}
+#polygon_text .q{
+    position: relative;
+    top: 45px;
+    font-family: 'sqneoHV';
+    font-size: 80px;
+    color: #000;
+    text-align: center;
+}
+#polygon_text .question{
+    position: relative;
+    width: 70%;
+    top: 75px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+}
+#polygon_text .answer{
+    position: relative;
+    width: 260px;
+    height: 30px;
+    top: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ddd;
+    /* box-sizing: border-box; */
+}
+#polygon_text .uquiz_btn{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -130px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(92.29deg, #7000FF 0%, #c392ff 100%);
+    cursor: pointer;
+}
+#polygon_text .uquiz_btn::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 25px;
+    background-image:linear-gradient(92.29deg, #c392ff 0%, #7000FF 100%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+#polygon_text .uquiz_btn:hover::before{
+    opacity: 1;
+}
+#polygon_text .uquiz_btn span{
+    position: absolute;
+    display: block;
+    width: 260px;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+    font-family: 'sqneoEB';
+    font-size: 20px;
+    color: #fff;
+    z-index: 100;
 }

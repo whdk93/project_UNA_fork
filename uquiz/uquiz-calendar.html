@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header&footer.css">
-    <link rel="stylesheet" href="css/uquiz-index.css">
+    <link rel="stylesheet" href="css/uquiz-calendar.css">
     <link rel="shortcut icon" type="image/icon" sizes="32*32" href="images/header/logoSample2.png">
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/dep_menu.js"></script>
     <script src="js/header&footer.js"></script>
+    <script src="js/uquiz.js"></script>
+    <script src="js/uquiz-calendar.js"></script>
 </head>
 <body>
     <!-------------------- [S] #wrap -------------------->
@@ -96,16 +98,28 @@
                         <div id="polygon4">
                             <div id="polygon3">
                                 <div id="polygon2">
-                                    <div id="polygon1">
-                                        <p class="uquiz_title">
-                                            우나<br>매일 퀴즈
-                                        </p>
-                                        <div id="uquiz_start_area" onclick="location.href='uquiz-inner.html'">
-                                            <p class="uquiz_start_btn">
-                                                퀴즈 풀러가기
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <div id="polygon_text">
+                                        <!-- 달력 영역 -->
+                                        <div class="sec_cal">
+                                            <div class="cal_nav">
+                                                <a href="javascript:;" class="nav-btn go-prev">prev</a>
+                                                <div class="year-month"></div>
+                                                <a href="javascript:;" class="nav-btn go-next">next</a>
+                                            </div>
+                                            <div class="cal_wrap">
+                                                <div class="days">
+                                                    <div class="day">MON</div>
+                                                    <div class="day">TUE</div>
+                                                    <div class="day">WED</div>
+                                                    <div class="day">THU</div>
+                                                    <div class="day">FRI</div>
+                                                    <div class="day">SAT</div>
+                                                    <div class="day">SUN</div>
+                                                </div>
+                                                <div class="dates"></div>
+                                            </div>
+                                        </div><!--.sec_cal-->
+                                    </div><!--#polygon2-->
                                 </div>
                             </div>
                         </div>

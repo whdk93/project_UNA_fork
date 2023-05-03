@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header&footer.css">
-    <link rel="stylesheet" href="css/uquiz-index.css">
+    <link rel="stylesheet" href="css/uquiz-inner.css">
     <link rel="shortcut icon" type="image/icon" sizes="32*32" href="images/header/logoSample2.png">
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/dep_menu.js"></script>
     <script src="js/header&footer.js"></script>
+    <script src="js/uquiz.js"></script>
 </head>
 <body>
     <!-------------------- [S] #wrap -------------------->
@@ -96,15 +97,17 @@
                         <div id="polygon4">
                             <div id="polygon3">
                                 <div id="polygon2">
-                                    <div id="polygon1">
-                                        <p class="uquiz_title">
-                                            우나<br>매일 퀴즈
-                                        </p>
-                                        <div id="uquiz_start_area" onclick="location.href='uquiz-inner.html'">
-                                            <p class="uquiz_start_btn">
-                                                퀴즈 풀러가기
-                                            </p>
-                                        </div>
+                                    <div id="polygon_text">
+                                        <p class="today_date">2023년 4월 3일 (월)</p>
+                                        <p class="q">Q</p>
+                                        <p class="question">봄철 밤하늘을 올려다보면<br>
+                                            아주 커다란 국자를 하나 볼 수 있어요.<br><br>
+                                            
+                                            이 국자의 이름 바로 ‘북두칠성’이랍니다.<br>
+                                            그럼 북두칠성은 어떤 별자리 안에<br>
+                                            포함되어 있을까요?</p>
+                                        <input class="answer" type="text" placeholder="정답 4글자">
+                                        <button class="submit_btn uquiz_btn" type="submit"><span>정답 제출</span></button>
                                     </div>
                                 </div>
                             </div>
