@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.book">
+
+	<resultMap type="bookVO" id="bookResult">
+		<result property="tNum" column="tNum"/>
+		<result property="bookNum" column="bookNum"/>
+		<result property="pageNum" column="pageNum"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content"/>
+		<result property="imageFileName" column="imageFileName"/>
+		
+	</resultMap>
+	<select id="selectBookPages" resultMap="bookResult" parameterType="int">
+		<![CDATA[
+			select * from maincontent_tbl where bookNum=#{bookNum} order by pageNum
+		]]>
+	</select>
+</mapper>
