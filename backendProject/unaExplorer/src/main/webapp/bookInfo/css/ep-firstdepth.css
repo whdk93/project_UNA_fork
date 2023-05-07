@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+:root{
+    --polygon-tb: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    --polygon-color: #7000FF 0%, #9E52FF 70.1%, #FFFFFF 98.97%;
+    --main-color: #7000FF;
+}
+/* * * * * * * * * * header 영역 * * * * * * * * * */
+html,body,#wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1100px;
+}
+/* 드래그 불가 */
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    /* overflow: hidden; */
+}
+/* * * * * * * * * * [S] #container * * * * * * * * * */
+#container{
+    position: relative;
+    width: 100%;
+    min-width: 1100px;
+    height: 900px;
+    padding-top: 100px;
+    /*background-color: transparent;*/
+    background-image: url(../images/nightSky.jpg);
+    /* margin-bottom: 0px; */
+    /* border: 3px solid red; */
+}
+#book_area{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    min-width: 715px;
+    height: 700px;
+    /* border: 3px solid yellow; */
+}
+#explain_area{
+    position: relative;
+    height: 700px;
+    min-width: 400px;
+    padding-top: 250px;
+    /* border: 3px solid navy; */
+    text-align: center;
+}
+#explain_area .ep_title_p{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+#explain_area .ep_title_span{
+    font-size: 50px;
+    color: #999;
+    /* line-height: 50px; */
+    font-family: 'sqneoHV';
+}
+#explain_area .ep_title_span_point{
+	font-size: 70px;
+	color: #ccc;
+}
+#explain_area .ep_content_p{
+    margin-top: 30px;
+}
+#explain_area .ep_content_span{
+    font-family: 'sqneoEB';
+    font-size: 20px;
+    font-style: italic;
+    line-height: 25px;
+    color: #999;
+    text-align: center;
+}
+#book_shelf{
+    position: relative;
+    padding: 0 60px;
+    height: 100%;
+    width: 70%;
+    min-width: 700px;
+    /* border: 3px solid blue; */
+}
+.img_shelf{
+    position: absolute;
+    width: 600px;
+    top: 250px;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 1;
+}
+.img_shelf2{
+    left: 50%;
+    margin-left: -300px;
+    top: 610px;
+}
+.book{
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    top: 65px;
+    left: 50%;
+    margin-left: -200px;
+    /* border: 3px solid salmon; */
+    z-index: 10;
+    box-shadow: 2px -2px 5px #333;
+}
+.book2{
+    margin-left: 50px;
+}
+.book3{
+    top: 430px;
+}
+.book4{
+    top: 430px;
+    margin-left: 50px;
+}
+.book:hover{
+    transition: transform 1s;
+    transform: scale(1.05);
+}
+.page{
+    position: relative;
+    margin: 0 auto;
+    /* width: 461px;
+    height: 600px; */
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+}
+.book1 .page1{background-image: url(../images/book/bookCover/1.png);}
+.book2 .page1{background-image: url(../images/book/bookCover/2.png);}
+.book3 .page1{background-image: url(../images/book/bookCover/3.png);}
+.book4 .page1{background-image: url(../images/book/bookCover/4.png);}
+
+#title_bg_wrap::after{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 300px;
+    content: "";
+    background: linear-gradient(to top, rgb(0,0,0) 0%, transparent 30%);
+    z-index: 10;
+}
+#sub_page_h2{
+	z-index: 100;
+}

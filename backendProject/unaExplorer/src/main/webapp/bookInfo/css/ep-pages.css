@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+:root{
+    --polygon-tb: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    --polygon-color: #7000FF 0%, #9E52FF 70.1%, #FFFFFF 98.97%;
+    --main-color: #7000FF;
+}
+/* * * * * * * * * * header 영역 * * * * * * * * * */
+html,body,#wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1100px;
+}
+/* 드래그 불가 */
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    /* overflow: hidden; */
+}
+/* * * * * * * * * * [S] #container * * * * * * * * * */
+#container{
+    position: relative;
+    width: 100%;
+    min-width: 1100px;
+    height: 900px;
+    padding-top: 100px;
+    background-color: #111;
+    /* margin-bottom: 0px; */
+    /*border: 3px solid red;*/
+}
+#book_area{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    min-width: 715px;
+    height: 700px;
+    /*border: 3px solid yellow;*/
+}
+
+#book{
+    position: relative;
+    margin: 50px auto;
+    /*border: 3px solid salmon;*/
+}
+
+#pages {
+    margin: 0px auto;
+    width: 900px;
+    height: 600px;
+    /*border: 3px solid navy;*/
+}
+/* 이건 기본..! */
+#pages .turn-page {
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#books div {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+/* 여기까지 */
+.page{
+	position: relative;
+	
+}
+.page_div{
+	position: relative;
+	background: #eee;
+	background-image: url(../images/bgpaper.jpg);
+	text-align: center;
+}
+.page.odd{
+	border-radius: 0 10px 10px 0;
+}
+.page.even{
+	border-radius: 10px 0 0 10px;
+}
+.page_img{
+	position: relative;
+	width: auto;
+	height: auto;
+	max-height: 250px;
+	margin: 30px auto;
+}
+.page_title{
+	margin: 20px;
+	font-family: 'sqneoEB';
+	font-size: 40px;
+}
+.page_content{
+	margin: 30px;
+	line-height: 30px;
+}
+footer{
+	background: #111;
+}
